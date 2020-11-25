@@ -145,7 +145,7 @@ public class SwarmScmSource extends AbstractP4ScmSource {
 			// Get first Swarm path; it MUST include the Jenkinsfile
 			P4Path p4Path = branch.getPath();
 
-			P4SCMHead head = new P4SCMHead(branch.getId(), branch.getName(), p4Path);
+			P4SCMHead head = new P4SCMHead(branch.getName(), p4Path);
 			list.add(head);
 		}
 
